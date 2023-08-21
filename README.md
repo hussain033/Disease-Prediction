@@ -43,7 +43,7 @@ This system is designed to reduce doctor-patient interactions for common disease
 - `datasets/`: Directory containing dataset files for diseases and symptoms.
 - `README.md`: The documentation you're reading right now.
 - `disease_inference`: Contains python script for disease prediction system inferencing as "inference.py"
-- `RecommenderSys_inference`: Contains python script for Recommender system inferencing.
+- `RecommenderSys_inference`: Contains python script for Recommender system inferencing called "Recommend.py".
 - `.gitignore`: List of files and directories to be ignored by version control.
 - `requirements.txt`: List of libraries required for using the model
 
@@ -67,12 +67,26 @@ This system is designed to reduce doctor-patient interactions for common disease
     pip install requirements.txt
    ```
 
-4. To use the inference file, use the command in cmd,
+4. To use the inference file of disease prediction system, use the commands in cmd,
+   First go to working directory
+   ```
+   cd disease_inference
+   ```
+   Next run the below command to make predictions
    ```
     python3 inference.py path/to/the/input/file
    ```
-   
-6. To use the ipynb files open it in jupyter notebook or vscode and follow the steps in given to retrain the model or experiment with it.
+5. To use the inference file of Recommender System, use the following commands,
+   First go to the working directory
+   ```
+   cd RecommederSys_inference
+   ```
+   Next run the below command to get recommedations
+   ```
+   python3 Recommend.py input
+   ```
+7. To use the ipynb files open it in jupyter notebook or vscode and follow the steps in given to retrain the model or experiment with it.
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to open an issue or submit a pull request.
