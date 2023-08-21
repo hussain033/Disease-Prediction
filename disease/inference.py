@@ -1,4 +1,3 @@
-import uvicorn
 from predict import prediction, preprocess
 from typing import List
 
