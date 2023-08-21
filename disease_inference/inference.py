@@ -9,9 +9,9 @@ def diseasePredict(dataFrame: List[str]):
     return predict
 
 if __name__ == "__main__":
-    if(len(sys.argv) == 0):
+    if(len(sys.argv) != 2):
       print("Enter the name of input file")
     else:
-      input = open(sys.argv[0],"r")
+      input = open(sys.argv[1],"r")
       output = diseasePredict(input)
       print("The disease identified using the symptoms is "+output)
