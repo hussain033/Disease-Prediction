@@ -22,8 +22,17 @@ This system is designed to reduce doctor-patient interactions for common disease
 ├── disease_classification_model.ipynb
 ├── symptom_recommender_system.ipynb
 ├── datasets/
-│   ├── disease_dataset.csv
-│   ├── symptom_dataset.csv
+│   ├── Disease_Training.csv
+│   ├── RecommenderSys_Training.csv
+│   ├── Disease_Testing.csv
+│   ├── Disease_Inference.csv
+├── disease_inference/
+│   ├── diseaseClass.pickle
+│   ├── api.py
+│   ├── predict.py
+│   ├── inference.py
+├── RecommenderSys_inference/
+│   ├── recommenderSys.pickle
 ├── README.md
 ├── .gitignore
 └── requirements.txt
@@ -33,6 +42,8 @@ This system is designed to reduce doctor-patient interactions for common disease
 - `symptom_recommender_system.ipynb`: Jupyter Notebook containing the symptom recommender system implementation using K-Nearest Neighbors.
 - `datasets/`: Directory containing dataset files for diseases and symptoms.
 - `README.md`: The documentation you're reading right now.
+- `disease_inference`: Contains python script for disease prediction system inferencing as "inference.py"
+- `RecommenderSys_inference`: Contains python script for Recommender system inferencing.
 - `.gitignore`: List of files and directories to be ignored by version control.
 - `requirements.txt`: List of libraries required for using the model
 
@@ -50,10 +61,18 @@ This system is designed to reduce doctor-patient interactions for common disease
 
 ## Usage
 
-1. Open the Jupyter Notebooks `disease_classification_model.ipynb` and `symptom_recommender_system.ipynb`.
-2. Follow the instructions in each notebook to train the models and perform predictions.
-3. For deployment in a chatbot interface, further development and integration will be required.
+1. Clone the github Repository.
+2. Install necessary files
+   ```
+    pip install requirements.txt
+   ```
 
+4. To use the inference file, use the command in cmd,
+   ```
+    python3 inference.py path/to/the/input/file
+   ```
+   
+6. To use the ipynb files open it in jupyter notebook or vscode and follow the steps in given to retrain the model or experiment with it.
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to open an issue or submit a pull request.
