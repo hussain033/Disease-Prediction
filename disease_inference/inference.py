@@ -12,6 +12,6 @@ if __name__ == "__main__":
     if(len(sys.argv) != 2):
       print("Enter the name of input file")
     else:
-      input = open(sys.argv[1],"r")
-      output = diseasePredict(input)
+      file = open(sys.argv[1],"r")
+      output = diseasePredict(file)
       print("The disease identified using the symptoms is "+output)
