@@ -87,9 +87,16 @@ This system is designed to reduce doctor-patient interactions for common disease
    ```
 7. To use the ipynb files open it in jupyter notebook or vscode and follow the steps in given to retrain the model or experiment with it.
 
+## What's Next
+
+We have planned to integrate the system into a chatbot interface for making it easier for patients to use it. 
+We are in a mission to convert the system into a fully scaled product and release it in the market along with guidance of a Knowledged medical practitioner
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to open an issue or submit a pull request.
+If you are a medical practitioner or an employee in any hospital and wants to implement this idea as a product. 
+Reach out to me through mail: hmohamedhussain2004@gmail.com
 
 
 
